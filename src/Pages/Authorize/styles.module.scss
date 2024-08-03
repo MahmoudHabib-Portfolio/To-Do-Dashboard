@@ -1,0 +1,12 @@
+@use "../../Styles/variables" as *;
+@use "../../Styles//mixins" as *;
+
+.mainC{
+    @include main-background;
+    @include w-full;
+    height: 100%;
+    padding: 3rem 3rem;
+    @include medium-screen{
+        padding: 3rem;
+    }
+}

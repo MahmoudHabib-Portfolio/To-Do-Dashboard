@@ -1,0 +1,17 @@
+@import "../Styles/style.scss";
+
+
+.lazyFallbackWrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+
+  svg {
+    width: 250px;
+  }
+}

@@ -1,0 +1,475 @@
+@use "../../Styles/variables" as *;
+@use "../../Styles/mixins" as *;
+
+.TaskCont{
+    @include flex;
+    @include flex-row;
+    @include w-full;
+    @include gap-x-3;
+    @include gap-y-6;
+    padding: 2em 2em;
+    @include tablet-screen{
+        @include flex-row-vp;
+        @include gap-x-6-vp;
+        padding: 1em;
+    }
+}
+
+.taskTap{
+    width: 50%;
+    padding: 1em 1.5em;
+    border: 1px solid rgba(161, 163, 171, 0.63);
+    border-radius: 16px;
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+    @include tablet-screen{
+        width: 100%;
+    }
+}
+
+.taskView{
+    @include flex;
+    @include flex-col;
+    @include w-full;
+    width: 50%;
+    padding: 1em;
+    border: 1px solid rgba(161, 163, 171, 0.63);
+    border-radius: 16px;
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+    @include tablet-screen{
+        width: 100%;
+    }
+}
+
+.modalTitle{
+    @include flex;
+    @include flex-col;
+    @include gap-y-3;
+}
+
+.subLine{
+    width: 100px;
+    height: 2.5px;
+    background: #F24E1E;
+}
+
+.tagTitle{
+    font-family: $font1;
+    color: #000;
+}
+
+.TasksCont{
+    @include flex;
+    @include flex-col;
+    @include gap-y-2;
+    background: none;
+    padding-top: 0.5em;
+}
+
+.taskBod{
+    @include flex;
+    @include flex-row;
+    @include justify-between;
+    @include gap-x-2;
+    border: 1.5px solid #4d4d4d;
+    border-radius: 14px;
+    padding: 0.5em 0.8em;
+    cursor: pointer;
+}
+
+.taskContent{
+    @include flex;
+    @include flex-col;
+    @include gap-y-3;
+    padding-top: 0.2em;
+}
+
+.taskBodyCont{
+    @include flex;
+    @include flex-row;
+    @include gap-x-2;
+    @include large-screen{
+        @include gap-x-10-vp;
+    }
+}
+
+.taskBodyCont h5{
+    font-family: $font5 !important;
+    color: #000;
+    font-size: 1rem !important;
+}
+
+.taskBodyCont p{
+    font-family: $font4 !important;
+    color: #747474;
+    font-size: 14px;
+}
+
+.ImgCont{
+    @include flex;
+    @include flex-col;
+    @include gap-y-2;
+    position: relative;
+    top: 2em;
+}
+
+.taskImg{
+    width: 110px;
+    height: 80px;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 14px;
+}
+
+.taskImg img{
+    border-radius: 14px;
+    height: 80px;
+}
+
+.taskFooter{
+    @include flex;
+    @include flex-row;
+    @include justify-between;
+    @include w-full;
+    font-size: 11px;
+    font-family: $font4;
+    padding-top: 2.5em;
+    @include large-screen{
+        @include justify-normal-vp;
+        @include gap-x-3;
+    }
+}
+
+.taskCap{
+    color: #A1A3AB;
+    font-family: $font4;
+    font-size: 11px;
+}
+
+.actionRows{
+    @include flex;
+    @include flex-col;
+}
+
+.actionRows button{
+    width: 100%;
+    font-family: $font5;
+    padding: 1em;
+    font-size: 12px;
+    text-align: center;
+    border: none;
+    background: #fff;
+}
+
+.actionRows button:hover{
+    background: #FF6767;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.taskThumb{
+    @include flex;
+    @include flex-row;
+    @include gap-x-4;
+    @include w-full;
+    padding-bottom: 2em;
+}
+
+.Taskimg{
+    width: 135px;
+    height: 125px;
+    background: #000;
+    border-radius: 12px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.taskDt{
+    @include flex;
+    @include flex-col;
+    @include gap-y-1;
+    padding-top: 1em;
+}
+
+.thumbT{
+    font-family: $font1;
+    font-size: 0.85rem;
+}
+
+.taskBody{
+    color: #747474;
+    font-size: 0.80rem;
+    @include w-full;
+    height: 100vh;
+}
+
+.taskBody p b{
+    font-weight: 700 !important;
+}
+
+.taskAction{
+   @include flex;
+   @include flex-row;
+   @include w-full;
+   @include gap-x-2;
+   @include justify-end;
+}
+
+.BillBox{
+    width: 36px;
+    height: 36px;
+    line-height: 30px;
+    background: $subHead;
+    border-radius: 6px;
+    color: #fff;
+    text-align: center;
+    padding: 0px 0px 5px 0px;
+    cursor: pointer;
+}
+
+.modalHead{
+    @include flex;
+    @include flex-row;
+    @include w-full;
+    @include justify-between;
+    padding: 0.5em 0.5em 0em 0.5em;
+}
+
+.modalTitle{
+    @include flex;
+    @include flex-col;
+}
+
+.subLine{
+    width: 100px;
+    height: 2.5px;
+    background: #F24E1E;
+}
+
+.closModel{
+    color: #000;
+    font-family: $font1;
+    background: none;
+    padding: 0em;
+    text-decoration: underline;
+    border: none;
+    font-size: 1rem;
+    @include small-screen{
+        font-size: 0.75rem !important;
+    }
+}
+
+.newTaskMod{
+    @include flex;
+    @include flex-col;
+    @include w-full;
+    @include gap-y-10;
+    padding-bottom: 1.5rem;
+}
+
+.modalBod{
+    @include flex;
+    @include flex-col;
+    @include w-full;
+    border: 1px solid rgba(161, 163, 171, 0.64);
+    padding: 1rem;
+}
+
+.taskForm{
+    @include flex;
+    @include flex-col;
+    @include w-full;
+    @include gap-y-4;
+}
+
+.taskTitle{
+    @include flex;
+    @include flex-col;
+    @include gap-y-1;
+}
+
+.taskT{
+    color: #000;
+    font-size: 1rem;
+    font-family: $font1;
+    @include small-screen{
+        font-size: 0.85rem !important;
+    }
+}
+
+.titleText{
+    width: 65%;
+    @include small-screen{
+        width: 100% !important;
+    }
+}
+
+.taskDate{
+    @include flex;
+    @include flex-col;
+    @include gap-y-1;
+}
+
+.taskD{
+    color: #000;
+    font-family: $font1;
+    @include small-screen{
+        font-size: 0.85rem !important;
+    }
+}
+
+.dateText{
+    width: 65%;
+    @include small-screen{
+        width: 100% !important;
+    }
+}
+
+.taskOptions{
+    @include flex;
+    @include flex-col;
+    @include gap-y-1;
+}
+
+.priorityT{
+    color: #000;
+    font-size: 1rem;
+    font-family: $font1;
+    @include small-screen{
+        font-size: 0.85rem !important;
+    }
+}
+
+.prOptions{
+    @include flex;
+    @include flex-row;
+    @include gap-x-10;
+    @include small-screen{
+        @include flex-row-vp;
+    }
+}
+
+/* Red-Bullet */
+.RedBullet{
+    position: relative;
+    background: #F21E1E;
+    width: 8px;
+    height: 8px;
+    border-radius: 14px;
+    display: inline-block;
+    bottom: 3px;
+}
+
+.priority{
+    color: #A1A3AB;
+    font-size: 0.85rem;
+    font-family: $font4;
+}
+
+/* Mod-Bullet */
+.ModBullet{
+    position: relative;
+    background: #3ABEFF;
+    width: 8px;
+    height: 8px;
+    border-radius: 14px;
+    display: inline-block;
+    bottom: 3px;
+}
+
+/* Success-Bullet */
+.SuccessBullet{
+    position: relative;
+    background: #05A301;
+    width: 8px;
+    height: 8px;
+    border-radius: 14px;
+    display: inline-block;
+    bottom: 3px;
+}
+
+.taskContainer{
+    @include flex;
+    @include flex-row;
+    @include gap-x-8;
+    @include tablet-screen{
+        @include flex-row-vp;
+        @include gap-x-4-vp;
+    }
+}
+
+.taskDsc{
+    @include flex;
+    @include flex-col;
+    @include gap-y-1;
+    width: 65%;
+    @include tablet-screen{
+        width: 100% !important;
+    }
+}
+
+.upload{
+    @include flex;
+    @include flex-col;
+    @include gap-y-1;
+    width: 35%;
+    @include tablet-screen{
+        width: 100% !important;
+    }
+}
+
+.priorityT{
+    color: #000;
+    font-size: 1rem;
+    font-family: $font1;
+    @include small-screen{
+        font-size: 0.85rem !important;
+    }
+}
+
+.uploadBlock{
+    @include flex;
+    @include flex-row;
+    @include justify-center;
+    @include justify-items-center;
+    @include w-full;
+    padding: 1em 1em;
+    border: 2px solid #A1A3AB;
+    border-radius: 8px;
+}
+
+.uploadCont{
+    @include flex;
+    @include flex-col;
+}
+
+.tagg{
+    color: #A1A3AB;
+    font-size: 1rem;
+    font-family: $font4;
+    text-align: center;
+    width: 100%;
+    @include small-screen{
+        font-size: 0.75rem !important;
+    }
+}
+
+.Brs{
+    font-family: $font4;
+}
+
+.submitBtn2{
+    font-family: $font2;
+    background-color: $actionBtn;
+    color: #F8F9FB;
+    font-size: 1rem;
+    padding: 0.5rem 0rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 15%;
+    @include small-screen{
+        font-size: 0.5rem;
+    }
+}

@@ -1,0 +1,203 @@
+@use "../../Styles/variables" as *;
+@use "../../Styles//mixins" as *;
+
+.Nav{
+    position: sticky;
+    display: block;
+    top: 0;
+    z-index: 500;
+}
+
+.Navbar{
+    @include w-full;
+    padding: 2rem 4rem 1rem 4rem;
+    @include flex;
+    @include flex-row;
+    @include justify-between;
+    @include gap-x-28;
+    @include gap-y-4;
+    @include large-screen{
+        @include gap-x-20;
+        padding: 2rem 2rem 1rem 2rem;
+    }
+    @include large-screen{
+        @include gap-x-10;
+    }
+    @include tablet-screen{
+        @include gap-x-6;
+        padding: 2rem 1rem 1rem 1rem;
+    }
+    @include small-screen{
+        @include flex-row-vp;
+    }
+    background-color: #F8F8F8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.AppLogo{
+    @include flex;
+    @include justify-start;
+    @include small-screen{
+        @include w-full;
+        @include justify-center;
+    }
+}
+
+.Search{
+    @include flex;
+    @include flex-row;
+    @include justify-center;
+    @include w-full;
+    height: 36px;
+    box-shadow: -17px 69px 28px rgba(0, 0, 0, 0.01), -9px 39px 24px rgba(0, 0, 0, 0.02), -4px 17px 18px rgba(0, 0, 0, 0.03), -1px 4px 10px rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.SearchIcon{
+    @include flex;
+    @include justify-center;
+    @include justify-items-center;
+    width: 40px;
+    background: $subHead;
+    border-radius: 10px;
+    line-height: 30px;
+}
+
+.NavEnd{
+    @include flex;
+    @include flex-row;
+    @include justify-end;
+    @include gap-x-8;
+}
+
+.Icons{
+    @include flex;
+    @include flex-row;
+    @include gap-x-3;
+    @include small-screen{
+        @include w-full;
+    }
+}
+
+.menuBar{
+    width: 36px;
+    height: 36px;
+    line-height: 30px;
+    background: $subHead;
+    border-radius: 6px;
+    color: #fff;
+    text-align: center;
+    padding: 0px 0px 5px 0px;
+    cursor: pointer;
+    display: none;
+    z-index: 500;
+    @include mobile-screen{
+        display: block !important;
+    }
+}
+
+.BillBox{
+    width: 36px;
+    height: 36px;
+    line-height: 30px;
+    background: $subHead;
+    border-radius: 6px;
+    color: #fff;
+    text-align: center;
+    padding: 0px 0px 5px 0px;
+    cursor: pointer;
+}
+
+.CalendBox{
+    position: relative;
+    width: 36px;
+    height: 36px;
+    line-height: 30px;
+    background: $subHead;
+    border-radius: 6px;
+    color: #fff;
+    text-align: center;
+    padding: 0px 0px 5px 0px;
+    cursor: pointer;
+}
+
+.date{
+    @include flex;
+    @include flex-col;
+    @include gap-y-1;
+    font-family: $font2;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.showDate{
+    color: $PrioC;
+}
+
+.CalenderBox{
+    padding: 1.5rem 1rem;
+    background-color: $CalendBack;
+    border-radius: 14px;
+    width: 225px;
+    box-shadow: 0px 22px 22px rgba(0, 0, 0, 0.09), 0px 6px 12px rgba(0, 0, 0, 0.1);
+    cursor:auto;
+}
+
+.NotifyBox{
+    background-color: #fff;
+    border-radius: 14px;
+    width: 325px;
+    box-shadow: 0px 22px 22px rgba(0, 0, 0, 0.09), 0px 6px 12px rgba(0, 0, 0, 0.1);
+    cursor:auto;
+}
+
+.CalendHead{
+    @include flex;
+    @include flex-row;
+    @include justify-between;
+}
+
+.NotifyHead{
+    @include flex;
+    @include flex-row;
+    @include justify-between;
+    padding: 1em 2em 0em 2em;
+}
+
+.CalendTitle{
+    font-family: $font1;
+    font-size: 0.85rem;
+    color: #000;
+}
+
+.NotifyTitle{
+    font-family: $font1;
+    font-size: 0.85rem;
+    color: #000;
+}
+
+.CalenderInpt{
+    padding: 0.5rem 0rem;
+}
+
+.NotifyBody{
+    @include flex;
+    @include flex-col;
+    @include gap-y-3;
+    background: #D3D3D3;
+    padding: 0.8rem 1rem;
+}
+
+.subHead{
+    padding: 0.5em 2em;
+    font-size: 1rem;
+    font-family: $font2;
+    color: #A1A3AB;
+}
+
+.slot{
+    @include flex;
+    @include flex-row;
+    @include justify-between;
+}

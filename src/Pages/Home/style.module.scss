@@ -1,0 +1,33 @@
+@use "../../Styles/variables" as *;
+@use "../../Styles/mixins" as *;
+
+.TabCont{
+    @include flex;
+    @include flex-row;
+    @include w-full;
+    @include gap-x-6;
+    overflow: hidden;
+    @include small-screen{
+        @include gap-x-null;
+    }
+}
+
+.TabsBody{
+    @include w-full;
+    padding: 3.5rem 1rem 0rem 0rem;
+    @include medium-screen{
+        padding: 3.5rem 1rem 0rem 0rem;
+    }
+    @include small-screen{
+        padding: 3.5rem 0rem 0rem 0rem;
+    }
+}
+
+.dashboardM{
+    position: relative;
+    z-index: 100;
+    transition: all 0.5s ease-out;
+    @include mobile-screen{
+    width: 0%;
+    }
+}

@@ -1,0 +1,115 @@
+@use "../../Styles/variables" as *;
+@use "../../Styles/mixins" as *;
+
+.TasktagCont{
+    padding: 1em 2em 2em 2em;
+    @include medium-screen{
+        padding: 0em 0.5em;
+    }
+}
+
+.TasktagBod{
+    border: 1px solid rgba(161, 163, 171, 0.63);
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 16px;
+    @include flex;
+    @include flex-col;
+    @include gap-y-3;
+    @include w-full;
+    padding: 1em 1.2em 2em 1.2em;
+}
+
+.modalTitle{
+    @include flex;
+    @include flex-col;
+    @include gap-y-1;
+}
+
+.modalTitle2{
+    @include flex;
+    @include flex-col;
+    @include gap-y-1;
+}
+
+.subLine{
+    width: 100px;
+    height: 2.5px;
+    background: #F24E1E;
+}
+
+.subLine2{
+    width: 45px;
+    height: 2.5px;
+    background: #F24E1E;
+}
+
+.taskCat{
+    font-family: $font1;
+    color: #000;
+    font-size: 1.2rem;
+    @include tablet-screen{
+        font-size: 1.2rem;
+    }
+}
+
+.submitBtn2{
+    font-family: $font2;
+    background-color: $actionBtn;
+    color: #F8F9FB;
+    font-size: 0.85rem;
+    padding: 0.5rem 0rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 15%;
+    @include medium-screen{
+        font-size: 0.5rem;
+        width: 35%;
+    }
+}
+
+.taskStatus{
+    @include flex;
+    @include flex-col;
+    @include gap-y-2;
+    padding-top: 1.5em;
+}
+
+.taskPriority{
+    @include flex;
+    @include flex-col;
+    @include gap-y-2;
+    padding-top: 5em;
+}
+
+.taskStatsHead{
+    @include flex;
+    @include flex-row;
+    @include justify-between;
+
+}
+
+.taskTag{
+    font-family: $font1;
+    font-size: 0.85rem;
+}
+
+.tableCont{
+    @include tablet-screen{
+        max-width: 100% !important;
+    }
+}
+
+.Celld{
+    color: #000;
+    font-family: $font5;
+    letter-spacing: 1px;
+}
+
+.taskAction{
+    @include flex;
+    @include flex-row;
+    @include justify-center;
+    @include w-full;
+    @include gap-x-3;
+}

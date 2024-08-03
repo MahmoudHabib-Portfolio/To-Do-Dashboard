@@ -1,0 +1,187 @@
+.ant-picker-footer{
+    display: none;
+  }
+  
+  .ant-picker-panel-container{
+    box-shadow: none !important;
+  }
+  
+  .ant-picker-panel-container{
+    border-radius: 0px !important;
+  }
+  
+  .ant-picker-dropdown .ant-picker-header button{
+    line-height: 0px !important;
+  }
+  
+  .ant-picker-header-view{
+    padding-top: 1em;
+    line-height: 0px !important;
+  }
+  
+  .ant-picker-cell-selected .ant-picker-cell-inner{
+    color: #fff !important;
+    font-weight: 600;
+    background: #3211FF !important;
+    border-radius: 12px !important;
+  }
+  
+  .ant-picker-cell-today .ant-picker-cell-inner{
+    color: #fff !important;
+    font-weight: 600;
+    background: #3211FF !important;
+    border-radius: 12px !important;
+  }
+  
+  .ant-picker-cell-inner::before{
+    border: 1.5px solid #3211FF !important;
+    border-radius: 12px !important;
+  }
+  
+  .ant-picker-dropdown .ant-picker-header {
+    border-bottom: none;
+    padding-top: 0.5em;
+    background: #F5F8FF;
+  }
+  
+  .ant-picker-body{
+    background: #F5F8FF;
+  }
+  
+  .ant-picker-header-next-btn{
+    border: 1.5px solid #A1A3AB !important;
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .ant-picker-header-prev-btn{
+    border: 1.5px solid #A1A3AB !important;
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .ant-picker{
+    border: 0.13rem solid #A1A3AB !important;
+  }
+  
+  .ant-picker:hover{
+    border-color: #A1A3AB !important;
+  }
+  
+  .ant-picker-focused{
+    border-color: #A1A3AB !important;
+  }
+  
+  .ant-popover-inner{
+    padding: 0px !important;
+  }
+  
+  .ant-popover-arrow{
+    display: none !important;
+  }
+  
+  .style_CalenderBox__WHoCA{
+    top: 0em !important;
+    position: relative !important;
+  }
+  
+  .style_NotifyBox__rGGoK{
+    top: 0em !important;
+    position: relative !important;
+  }
+  
+  .style_dashCont__cBXP5{
+    padding: 0.5em 1em !important;
+  }
+  
+  .nav-link.active button{
+    color: red !important;
+  }
+  
+  .nav-link.active button span .SvgIcon svg path{
+    fill: #FF6767;
+  }
+  
+  .nav-pills .nav-link.active .nav-pills .show>.nav-link{
+    color: #F21E1E !important;
+  }
+  
+  .nav-pills{
+    --bs-nav-pills-border-radius: 14px !important;
+    --bs-nav-pills-link-active-bg: #fff !important;
+  }
+  
+  .nav-link{
+    padding: 0px !important;
+  }
+  
+  .canvasjs-chart-container{
+    text-align: center !important;
+  }
+  
+  .canvasjs-chart-tooltip{
+    display: none !important;
+  }
+  
+  .canvasjs-chart-credit{
+    display: none !important;
+  }
+  
+  .ant-select-selector{
+    background: transparent !important;
+    border: 0px !important;
+    border-color: none !important;
+    padding: 0px !important;
+  }
+  
+  .ant-select-selector:focuse{
+    border: 0px !important;
+    border-color: none !important;
+  }
+  
+  .ant-select-selection-item:focuse{
+    border: 0px !important;
+    border-color: none !important;
+  }
+  
+  .ant-select-selection-item{
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+  }
+  
+  .ant-select .ant-select-arrow {
+    color: #000 !important;
+  }
+  
+  .ant-select .ant-select-arrow .anticon svg {
+    stroke: #000;
+    stroke-width: 80;
+  }
+  
+  .ant-select {
+    &:focused {
+      border-color: transparent !important;
+      box-shadow: none !important;
+    }
+  }
+  
+  .ant-select-dropdown .ant-select-item-option-selected:not(.ant-select-item-option-disabled){
+    background: #FF6767 !important;
+  }
+  
+  .canvasjs-chart-canvas{
+    position: unset !important;
+  }
+  
+  @media screen and (max-width: 640px){
+    .canvasjs-chart-canvas{
+      width: 100px !important;
+    }
+  }
+  
+  canvas.canvasjs-chart-canvas:nth-child(2){
+    display: none !important;
+  }
+  

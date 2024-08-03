@@ -1,0 +1,80 @@
+@use "../../Styles/variables" as *;
+@use "../../Styles//mixins" as *;
+
+.subC{
+    max-width: 1024px;
+    background: $primary-color;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 80px 64px 41px rgba(0, 0, 0, 0.01), 45px 36px 34px rgba(0, 0, 0, 0.02), 20px 16px 26px rgba(0, 0, 0, 0.03), 5px 4px 14px rgba(0, 0, 0, 0.04);
+    @include grid;
+    @include grid-cols-2;
+    @include medium-screen{
+        @include grid-cols-1;
+        padding: 1rem;
+    }
+    padding: 0.5rem 0rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.subC1{
+    @include medium-screen{
+        display: none;
+    }
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.subC1 img{
+    position: absolute;
+    bottom: 0;
+}
+
+.subC2{
+    @include w-full;
+    padding: 1.8rem 2rem 0rem 0rem;
+    @include medium-screen{
+        padding: 0rem;
+    }
+    &__RegHead{
+        font-size: 1.75rem;
+        font-family: $font1;
+    }
+    &__regForm{
+        padding-top: 1rem;
+        font-family: $font1;
+    }
+}
+
+.RegHeadf{
+    @include grid;
+    @include grid-rows-9;
+    @include gap-y-2;
+}
+
+.signIn{
+    font-family: $font1;
+    padding-top: 1rem;
+}
+
+.signIn button{
+    border: none;
+    background: none;
+    font-family: $font1;
+    text-decoration: none !important;
+    color: $link;
+    cursor: pointer;
+}
+
+.submitBtn{
+    font-family: $font1;
+    background-color: $subHead;
+    color: #F8F9FB;
+    font-size: 1rem;
+    padding: 1rem 1.8rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
